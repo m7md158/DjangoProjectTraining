@@ -9,3 +9,7 @@ class Receipe(models.Model):
     receipe_image = models.ImageField(upload_to="receipe")
     receipe_view_count = models.IntegerField(default=1)
     
+    
+    def __str__(self):
+        return self.receipe_name
+        
